@@ -152,6 +152,11 @@ p {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .px-1 {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -294,4 +299,55 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+/* footer */
+#main-footer {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background-color: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+}
+
+#main-footer .footer-container ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #555;
+  width: 90%;
+}
+
+#main-footer .footer-container ul li a:hover {
+  color: var(--primary-color);
+}
+
+#main-footer .social-icons a:hover {
+  color: var(--primary-color);
 }
